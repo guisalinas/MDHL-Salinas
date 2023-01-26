@@ -1,3 +1,8 @@
+/*Tools*/
+.space{
+    margin-bottom: 20px;
+}
+
 /*reset & font*/
 *{
     padding: 0px;
@@ -9,9 +14,6 @@
 
 body{
     margin: 0px 80px 0px 80px;
-}
-.space{
-    margin-bottom: 20px;
 }
 
 .header-banner{
@@ -42,7 +44,7 @@ nav a{
     background-color: rgb(115, 187, 7);
 }
 
-.title-section h1{
+.title-section h2{
     text-align: center;
     border: solid 2px #333;
     padding:5px;
@@ -52,6 +54,8 @@ nav a{
     position: absolute;
     left: 330px;
     top: 425px;
+    width: 800px;
+    text-align: justify;
 }
 
 .container article{
