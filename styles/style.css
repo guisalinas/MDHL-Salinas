@@ -8,7 +8,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Comic Neue', cursive;
     color: #333;
 }
 
@@ -50,12 +50,26 @@ nav a{
     padding:5px;
 }
 
+figure img{
+    width: 200px;
+}
+
+figure{
+    display: inline-block;
+}
+
+.section{
+    position: relative;
+}
+
 .container{
-    position: absolute;
-    left:30%;
-    top: 71%;
+    display: inline-block;
+    position: relative;
+    left: 5%;
     width: 60%;
     text-align: justify;
+    vertical-align: top;
+    padding: 2%;
 }
 
 .container article{
@@ -66,6 +80,3 @@ nav a{
     margin-left: 30px;
 }
 
-figure img{
-    width: 200px;
-}
