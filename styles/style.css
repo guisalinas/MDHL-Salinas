@@ -1,19 +1,18 @@
-/*Tools*/
-.space{
-    margin-bottom: 20px;
-}
-
 /*reset & font*/
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Oxygen', sans-serif;
     color: #333;
 }
 
-body{
-    margin: 0% 8% 0% 8%;
+main{
+    padding: 0% 8% 0% 8%;
+}
+
+p{
+    padding-bottom: 2%;
 }
 
 .header-banner{
@@ -27,7 +26,6 @@ nav{
     position: absolute;
     right: 8%;
     top: 5%;
-
 }
 
 nav a{
@@ -54,29 +52,91 @@ figure img{
     width: 200px;
 }
 
-figure{
-    display: inline-block;
-}
-
-.section{
-    position: relative;
+.section-container{
+    display: flex;
+    width: 100%;
 }
 
 .container{
-    display: inline-block;
-    position: relative;
-    left: 5%;
-    width: 60%;
     text-align: justify;
-    vertical-align: top;
-    padding: 2%;
-}
-
-.container article{
-    padding-bottom: 35px;
+    padding-left: 5%;
+    padding-top: 2%;
 }
 
 .container article p{
     margin-left: 30px;
 }
 
+.contact-game{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.footer-container{
+    background-color: #222;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container p{
+    color: whitesmoke;
+    padding: 1%;
+    font-size: small;
+}
+
+/*----Image-cards----*/
+.container-gallery{
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-container img{
+    max-width: 20%;
+    align-items: center;
+    padding: 0% 2% 0% 2%;
+    transition: all 1s;
+    position: relative;
+}
+
+.image-container img:hover{
+    transform: scale(2.1);
+}
+
+/*----Lists-----*/
+
+article ul{
+    list-style-type: none;
+}
+
+.list-rules{
+    list-style-type: lower-alpha;
+    padding-left: 10%;
+}
+
+/*----Tables----*/
+
+table{
+    width: 100%;
+    overflow-x:auto;
+}
+
+th{
+    padding: 1%;
+}
+
+thead, tbody, tfoot{
+    text-align: center;
+}
+
+#tfoot-games-table{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: lighter;
+}
