@@ -1,4 +1,22 @@
-/*reset & font*/
+/*---Tools---*/
+.section-base{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.titles{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    padding:5px;
+}
+
+#btn-active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*---reset & font---*/
 *{
     padding: 0px;
     margin: 0px;
@@ -7,49 +25,53 @@
     color: #333;
 }
 
+/*---General---*/
+body {
+    background-color: whitesmoke;
+}
+
 main{
     padding: 0% 8% 0% 8%;
+    height: 125vh;
 }
 
 p{
     padding-bottom: 2%;
 }
 
-.header-banner{
-    height: 300px;
-    background-image: url(../assets/design1_image1.jpg);
-    background-position: 0 -100px;
-    background-size: cover;
+header{
+    height: 8rem;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav{
-    position: absolute;
-    right: 8%;
-    top: 5%;
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    justify-content: end;
+    
 }
 
 nav a{
-    background-color: rgb(0, 60, 255);
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
+    color: whitesmoke;
     padding: 5px 15px 5px 15px;
-    border: solid 1px black;
-    box-shadow: 5px 5px 3px #333 ;
-}
-
-#btn-active{
-    background-color: rgb(115, 187, 7);
-}
-
-.title-section h2{
+    text-decoration: none;
     text-align: center;
-    border: solid 2px #333;
-    padding:5px;
 }
 
-figure img{
-    width: 200px;
+.logo-container img{
+    height: 100px;
+}
+
+.logo-container{
+    display: flex;
+    padding: 0% 2% 0% 2%;
+}
+
+.logo-container h1{
+    padding-top: 5%;
 }
 
 .section-container{
@@ -74,7 +96,7 @@ figure img{
 }
 
 .footer-container{
-    background-color: #222;
+    background-color: #333;
     text-align: center;
     width: 100%;
 }
@@ -83,6 +105,18 @@ figure img{
     color: whitesmoke;
     padding: 1%;
     font-size: small;
+}
+
+.MDHL-font{
+    font-family: 'Anton', sans-serif;
+    color: #f8e12e;
+    -webkit-text-stroke: 0.1px rgb(212, 106, 6); 
+    text-transform: uppercase;
+}
+
+.letsgo{
+    font-size: 3em;
+    text-align: center;
 }
 
 /*----Image-cards----*/
@@ -103,6 +137,7 @@ figure img{
     padding: 0% 2% 0% 2%;
     transition: all 1s;
     position: relative;
+    
 }
 
 .image-container img:hover{
@@ -125,8 +160,16 @@ article ul{
 table{
     width: 100%;
     overflow-x:auto;
+    border-spacing: 0;
 }
 
+#table-container{
+    margin: auto;
+}
+
+.line-1{
+    background-color: rgb(189, 189, 189);
+}
 th{
     padding: 1%;
 }
