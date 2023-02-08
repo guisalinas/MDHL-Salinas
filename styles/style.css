@@ -1,7 +1,17 @@
+/*---reset & font---*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    color: #333;
+}
+
 /*---Tools---*/
 .section-base{
     padding-top: 3%;
     padding-bottom: 3%;
+    text-align: justify;
 }
 
 .titles{
@@ -16,23 +26,17 @@
     text-decoration: underline;
 }
 
-/*---reset & font---*/
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Oxygen', sans-serif;
-    color: #333;
-}
-
 /*---General---*/
+
 body {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 120vh;
 }
 
 main{
     padding: 0% 8% 0% 8%;
-    height: 125vh;
+    min-height: 100%;
 }
 
 p{
@@ -40,6 +44,7 @@ p{
 }
 
 header{
+    width: 100%;
     height: 8rem;
     background-color: #333;
     display: flex;
@@ -54,14 +59,14 @@ nav{
     
 }
 
-nav a{
+nav>a{
     color: whitesmoke;
     padding: 5px 15px 5px 15px;
     text-decoration: none;
     text-align: center;
 }
 
-.logo-container img{
+.logo-container>img{
     height: 100px;
 }
 
@@ -70,7 +75,7 @@ nav a{
     padding: 0% 2% 0% 2%;
 }
 
-.logo-container h1{
+.logo-container>h1{
     padding-top: 5%;
 }
 
@@ -79,13 +84,7 @@ nav a{
     width: 100%;
 }
 
-.container{
-    text-align: justify;
-    padding-left: 5%;
-    padding-top: 2%;
-}
-
-.container article p{
+article p{
     margin-left: 30px;
 }
 
@@ -134,7 +133,6 @@ i{
     text-align: center;
 }
 
-
 /*----Image-cards----*/
 .container-gallery{
     display: flex;
@@ -147,7 +145,7 @@ i{
     justify-content: space-evenly;
 }
 
-.image-container img{
+.image-container>img{
     max-width: 20%;
     align-items: center;
     padding: 0% 2% 0% 2%;
@@ -156,13 +154,13 @@ i{
     
 }
 
-.image-container img:hover{
+.image-container>img:hover{
     transform: scale(2.1);
 }
 
 /*----Lists-----*/
 
-article ul{
+article>ul{
     list-style-type: none;
 }
 
@@ -170,6 +168,7 @@ article ul{
     list-style-type: lower-alpha;
     padding-left: 10%;
 }
+
 
 /*----Tables----*/
 
@@ -179,13 +178,14 @@ table{
     border-spacing: 0;
 }
 
-#table-container{
+.table-container{
     margin: auto;
 }
 
 .line-1{
     background-color: rgb(189, 189, 189);
 }
+
 th{
     padding: 1%;
 }
@@ -198,4 +198,106 @@ thead, tbody, tfoot{
     font-style: italic;
     text-decoration: underline;
     font-weight: lighter;
+}
+
+/*---- FORM----*/
+
+#container-form{
+    text-align: start;
+}
+
+form{
+    border-radius: 0.5%;
+    width: 100%;
+    padding: 2%;
+    
+}
+
+fieldset{
+    border: 0;
+    margin: 2rem 0 2rem 0;
+}
+
+legend{
+    font-weight: bolder;
+}
+
+form input{
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #e46f02;
+    padding: 5px;
+}
+
+form .form-label, .form-label-radio, input{
+    display: inline;
+    margin: 10px 2px 5px 0px;
+}
+
+form .form-label-radio input{
+    margin-right: 3%;
+}
+
+form .form-label-radio-2, .form-label-check{
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.permission  p{
+    text-align: justify;
+}
+
+/*--buttons--*/
+.btn{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #e46f02;
+    z-index: 1;
+}
+
+.btn:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.btn:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    right: 0;
+}
+
+.btn-submit:hover{
+    background-color: rgb(123, 201, 5);
+}
+
+.btn-clear:hover{
+    background-color: rgb(223, 27, 27);
+}
+
+.btn:active {
+    top: 2px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-around;
 }
