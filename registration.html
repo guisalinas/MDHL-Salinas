@@ -40,7 +40,7 @@
             <div class="titles">
                 <h2>Registration Form</h2>
             </div>
-            <div class="section-container" id="container-form">
+            <div class="container-form">
                 <!--FORM-->
                 <form action="./show_data.html" method="get">
                     <!--personal information-->
@@ -49,27 +49,27 @@
 
                         <div>
                             <div class="form-label">
-                                <label for="name">Player's First Name: </label>
-                                <input type="text" id="name" name="name" placeholder="Tom" />
+                                <label for="first-name">Player's First Name: </label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Tom" required />
                             </div>
 
                             <div class="form-label">
                                 <label for="last-name">Last Name: </label>
-                                <input type="text" name="last-name" id="last-name" placeholder="Danton" />
+                                <input type="text" name="last-name" id="last-name" placeholder="Danton" required/>
                             </div>
                         </div>
 
                         <div>
                             <div class="form-label label-address">
                                 <label for="address">Street Address: </label>
-                                <input type="text" name="address" name="address" placeholder="1812 Morrow Ave" />
+                                <input type="text" name="address" name="address" placeholder="1812 Morrow Ave" required/>
                             </div>
 
                         </div>
 
                         <div class="form-label">
                             <label for="city">City: </label>
-                            <input type="text" name="city" id="city" placeholder="North Chicago" />
+                            <input type="text" name="city" id="city" placeholder="North Chicago" required/>
                         </div>
 
                         <div class="form-label">
@@ -81,7 +81,7 @@
                         <div>
                             <div class="form-label">
                                 <label for="birth-date">Birth Date: </label>
-                                <input type="date" name="birth-date" id="birth-date" />
+                                <input type="date" name="birth-date" id="birth-date" required/>
                             </div>
                             <div class="form-label-radio">
                                 <label for="gender">Gender: </label>
@@ -173,7 +173,8 @@
                     <fieldset>
                         <legend>Uniform Size</legend>
                         <label for="uniform-size">Please, select an option:</label>
-                        <select name="uniform-size" id="uniform-size">
+                        <select name="uniform-size" id="uniform-size" required>
+                            <option value="">---Select---</option>
                             <option value="youth-smal">Youth Smal</option>
                             <option value="youth-medium">Youth Medium</option>
                             <option value="youth-Large">Youth Large</option>
@@ -200,17 +201,16 @@
                             activities, which trasportation.
                         </p>
                         <p>
-                            By signing below, I herebyagree and authorize the above. In addition, by singing below,
-                            lalso acknowledge that
-                            I have read the cancellation policy and agree to its terms.
+                            By entering your name below, I herebyagree and authorize the above. In addition, by singing below,
+                            lalso acknowledge that I have read the cancellation policy and agree to its terms.
                         </p>
                         <div class="form-label">
                             <label for="signature">Parent/Guardian Signature:</label>
-                            <input type="text" name="signature" id="signature">
+                            <input type="text" name="signature" id="signature" required>
                         </div>
                         <div class="form-label">
                             <label for="permission-date">Date:</label>
-                            <input type="date" name="permission-date" id="permission-date" value="permission-date">
+                            <input type="date" name="permission-date" id="permission-date" value="permission-date" required>
                         </div>
                     </fieldset>
                     <div class="button-group">

@@ -55,8 +55,7 @@ header{
 nav{
     padding: 2% 0% 2% 0%;
     display: flex;
-    justify-content: end;
-    
+    justify-content: stretch;    
 }
 
 nav>a{
@@ -140,6 +139,7 @@ i{
     align-items: center;
 }
 
+
 .image-container{
     display: flex;
     justify-content: space-evenly;
@@ -201,10 +201,6 @@ thead, tbody, tfoot{
 }
 
 /*---- FORM----*/
-
-#container-form{
-    text-align: start;
-}
 
 form{
     border-radius: 0.5%;
@@ -285,11 +281,11 @@ form .form-label-radio-2, .form-label-check{
     right: 0;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background-color: rgb(123, 201, 5);
 }
 
-.btn-clear:hover{
+.btn-clear:hover {
     background-color: rgb(223, 27, 27);
 }
 
@@ -297,7 +293,28 @@ form .form-label-radio-2, .form-label-check{
     top: 2px;
 }
 
-.button-group{
+.button-group {
     display: flex;
     justify-content: space-around;
+}
+
+/*--Map cards--*/
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.map-container h2 {
+    color:#fff;
+    margin-bottom: 1rem;
+}
+
+.map {
+    padding: 2%;
+    background-color: rgba(19, 18, 18, 0.6);
+    margin: 1%;
+    border-radius: 3px;
 }
